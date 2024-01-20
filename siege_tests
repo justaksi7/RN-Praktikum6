@@ -1,0 +1,146 @@
+1a)
+{       "transactions":                      2515273,
+        "availability":                       100.00,
+        "elapsed_time":                        59.86,
+        "data_transferred":                   422.18,
+        "response_time":                        0.00,
+        "transaction_rate":                 42019.26,
+        "throughput":                           7.05,
+        "concurrency":                          8.93,
+        "successful_transactions":           2515273,
+        "failed_transactions":                     0,
+        "longest_transaction":                  0.02,
+        "shortest_transaction":                 0.00
+}
+
+1b)
+{       "transactions":                           11,
+        "availability":                       100.00,
+        "elapsed_time":                        59.69,
+        "data_transferred":                     0.00,
+        "response_time":                       29.55,
+        "transaction_rate":                     0.18,
+        "throughput":                           0.00,
+        "concurrency":                          5.44,
+        "successful_transactions":                11,
+        "failed_transactions":                     0,
+        "longest_transaction":                 50.00,
+        "shortest_transaction":                 5.00
+}
+
+1c)
+{       "transactions":                           29,
+        "availability":                       100.00,
+        "elapsed_time":                        59.14,
+        "data_transferred":                     0.00,
+        "response_time":                       16.21,
+        "transaction_rate":                     0.49,
+        "throughput":                           0.00,
+        "concurrency":                          7.95,
+        "successful_transactions":                29,
+        "failed_transactions":                     0,
+        "longest_transaction":                 45.00,
+        "shortest_transaction":                 0.00
+}
+
+2a)
+siege http://127.0.0.1:7878 -t 1m -c 10      
+
+{       "transactions":                      2083628,
+        "availability":                       100.00,
+        "elapsed_time":                        59.94,
+        "data_transferred":                   349.73,
+        "response_time":                        0.00,
+        "transaction_rate":                 34761.89,
+        "throughput":                           5.83,
+        "concurrency":                          9.01,
+        "successful_transactions":           2083629,
+        "failed_transactions":                     0,
+        "longest_transaction":                  0.02,
+        "shortest_transaction":                 0.00
+}
+
+2b)
+siege http://127.0.0.1:7878/sleep -t 1m -c 10
+
+{       "transactions":                           44,
+        "availability":                       100.00,
+        "elapsed_time":                        59.59,
+        "data_transferred":                     0.01,
+        "response_time":                       11.59,
+        "transaction_rate":                     0.74,
+        "throughput":                           0.00,
+        "concurrency":                          8.56,
+        "successful_transactions":                44,
+        "failed_transactions":                     0,
+        "longest_transaction":                 15.00,
+        "shortest_transaction":                 5.00
+}
+
+2c)
+siege -f urls.txt -t 1m -c 10                
+
+{       "transactions":                           94,
+        "availability":                       100.00,
+        "elapsed_time":                        59.23,
+        "data_transferred":                     0.02,
+        "response_time":                        5.64,
+        "transaction_rate":                     1.59,
+        "throughput":                           0.00,
+        "concurrency":                          8.95,
+        "successful_transactions":                94,
+        "failed_transactions":                     0,
+        "longest_transaction":                 15.00,
+        "shortest_transaction":                 0.00
+}
+
+3a)
+siege http://127.0.0.1:7878 -t 1m -c 10      
+
+{       "transactions":                      1909528,
+        "availability":                       100.00,
+        "elapsed_time":                        59.49,
+        "data_transferred":                   320.51,
+        "response_time":                        0.00,
+        "transaction_rate":                 32098.30,
+        "throughput":                           5.39,
+        "concurrency":                          8.84,
+        "successful_transactions":           1909529,
+        "failed_transactions":                     0,
+        "longest_transaction":                  0.02,
+        "shortest_transaction":                 0.00
+}
+
+3b)
+siege http://127.0.0.1:7878/sleep -t 1m -c 10
+
+{       "transactions":                           88,
+        "availability":                       100.00,
+        "elapsed_time":                        59.65,
+        "data_transferred":                     0.01,
+        "response_time":                        6.14,
+        "transaction_rate":                     1.48,
+        "throughput":                           0.00,
+        "concurrency":                          9.05,
+        "successful_transactions":                88,
+        "failed_transactions":                     0,
+        "longest_transaction":                 10.00,
+        "shortest_transaction":                 5.00
+}
+
+3c)
+siege -f urls.txt -t 1m -c 10                
+
+{       "transactions":                          184,
+        "availability":                       100.00,
+        "elapsed_time":                        59.21,
+        "data_transferred":                     0.03,
+        "response_time":                        2.96,
+        "transaction_rate":                     3.11,
+        "throughput":                           0.00,
+        "concurrency":                          9.21,
+        "successful_transactions":               184,
+        "failed_transactions":                     0,
+        "longest_transaction":                 10.00,
+        "shortest_transaction":                 0.00
+}
